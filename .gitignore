@@ -1,0 +1,6 @@
+# OS / editor rommel
+Thumbs.db
+.DS_Store
+desktop.ini
+*.tmp
+_verify/

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tim van Dalfsen — AI-projecten</title>
+<meta name="description" content="Portfolio van Tim van Dalfsen: werkende oplossingen gebouwd met AI — een automatische BTC-handelsbot, een geautomatiseerde workout-planner en een zelfgebouwde puzzel-app." />
+<link rel="icon" href="assets/puzzel-icon.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <a href="#top" class="nav-brand">TvD</a>
+  <nav class="nav-links">
+    <a href="#aanpak">Aanpak</a>
+    <a href="#btc">Handelsbot</a>
+    <a href="#workout">Workout-planner</a>
+    <a href="#puzzel">Puzzel-app</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section id="top" class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Portfolio · AI-projecten</p>
+    <h1 class="hero-title">Ik bouw werkende oplossingen met AI —<br><span class="accent">van idee tot productie.</span></h1>
+    <p class="hero-lead">
+      <!-- PLACEHOLDER — pas deze tekst aan naar je eigen verhaal -->
+      Ik ben Tim van Dalfsen. De afgelopen periode heb ik mezelf leren ontwikkelen met AI door
+      écht dingen te bouwen: van een volautomatische handelsbot tot een planner die mijn
+      mailbox uitleest en een eigen app die live staat. Deze projecten laten zien hoe ik
+      een probleem omzet in een werkende oplossing, en wat ik onderweg heb geleerd.
+    </p>
+    <p class="hero-quote">De AI revolutie is in volle gang, doe jij mee of blijf je achter?</p>
+    <div class="hero-actions">
+      <a href="#projecten" class="btn btn-primary">Bekijk de projecten</a>
+      <a href="#contact" class="btn btn-ghost">Neem contact op</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AANPAK ===================== -->
+<section id="aanpak" class="section">
+  <div class="section-head">
+    <h2>Hoe ik met AI werk</h2>
+    <p class="section-sub">
+      <!-- PLACEHOLDER — vrij aan te passen -->
+      Mijn aanpak in het kort.
+    </p>
+  </div>
+  <div class="cards-3">
+    <div class="mini-card">
+      <div class="mini-ico">🛠️</div>
+      <h3>Van probleem naar prototype</h3>
+      <p>Ik begin bij een concreet probleem uit mijn eigen werk, hobby's of omgeving. Ik schrijf een plan met de stappen die ik moet doorlopen om tot een resultaat te komen en maak hier eventuele sub-projecten voor. Daarna bouw ik snel een prototype om de globale werking en haalbaarheid te testen.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-ico">📈</div>
+      <h3>Leren door te bouwen</h3>
+      <p>Elk project leerde me een nieuwe vaardigheid: API's, data-automatisering en het opleveren van een echte applicatie. Leren en vermaak zijn ook meestal de drijfveer achter deze projecten.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-ico">🔁</div>
+      <h3>Itereren op echte data</h3>
+      <p>Ik kijk eerlijk naar wat wél en niet werkt, en gebruik die inzichten om de volgende versie beter te maken.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTEN ===================== -->
+<div id="projecten"></div>
+
+<!-- ---------- PROJECT 1: BTC HANDELSBOT ---------- -->
+<section id="btc" class="project">
+  <div class="project-head">
+    <span class="project-index">01</span>
+    <div>
+      <h2>Volautomatische BTC-handelsbot</h2>
+      <p class="project-oneliner">Een bot die 24/7 zelfstandig Bitcoin verhandelt, met een eigen live dashboard.</p>
+    </div>
+    <span class="status-pill status-live">● Draait live</span>
+  </div>
+
+  <div class="gallery">
+    <figure class="shot wide">
+      <img src="assets/btc-dashboard-top.png" alt="BTC trading dashboard" class="zoomable" data-full="assets/btc-dashboard.png" loading="lazy" />
+      <figcaption>Het zelfgebouwde dashboard — saldo, P&amp;L, win rate en de equity-curve.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-body">
+    <div class="block">
+      <h3>Wat het doet</h3>
+      <p>
+        De bot draait volledig zelfstandig: hij haalt elke 15 minuten verse marktdata op, berekent een
+        handelssignaal, opent en sluit posities, en bewaakt het risico. Een eigen dashboard toont real-time saldo, P&amp;L, win rate en de equity-curve.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>Hoe het werkt</h3>
+      <p>
+        De bot praat via een <strong>API</strong> met een handelsplatform: marktdata van Binance,
+        order-uitvoering op OKX. Naast gewone REST-aanroepen luistert hij via een <strong>websocket</strong> live
+        mee met liquidaties en de order-book-balans. De strategie-parameters worden periodiek opnieuw
+        geoptimaliseerd (walk-forward) zodat de bot meebeweegt met de markt.
+      </p>
+    </div>
+
+    <div class="block highlight">
+      <h3>💡 Wat ik heb geleerd</h3>
+      <p>
+        Bij dit project leerde ik <strong>hoe je API's gebruikt om met handelsplatformen te communiceren</strong>.
+        Daarnaast heb ik geleerd hoe belangrijk het is om de juiste en voldoende context mee te geven in de verbeter-loop.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>Resultaten</h3>
+      <div class="stats-row">
+        <div class="stat"><span class="stat-num good">+21,6%</span><span class="stat-lbl">CAGR · research-backtest (out-of-sample)</span></div>
+        <div class="stat"><span class="stat-num good">10,1</span><span class="stat-lbl">Sharpe · research-backtest</span></div>
+        <div class="stat"><span class="stat-num bad">−7,3%</span><span class="stat-lbl">live demo-account (huidige stand)</span></div>
+      </div>
+      <p class="note">
+        Momenteel zijn de resultaten nog niet positief. Er zijn veel mogelijke redenen waar dit door kan komen,
+        maar het is vooral van belang dat ik data verzamel zodat er met meer context verbeteringen doorgevoerd
+        kunnen worden.
+      </p>
+    </div>
+
+    <div class="block roadmap">
+      <h3>🔧 Verbeterpunten &amp; volgende versie</h3>
+      <ul>
+        <li>In een volgende versie/update moet het AI-model meer vrijheid krijgen in zijn verbetersuggesties. Het moet die suggesties vervolgens zelf testen voordat het voorlegt of de aanpassingen doorgevoerd mogen worden.</li>
+        <li>Momenteel zijn AI-modellen nog niet heel sterk in het voorspellen van koersen op de korte termijn. Ik denk dat het een kwestie van tijd is voordat AI dit beter kan dan de mens.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- PROJECT 2: WORKOUT-PLANNER ---------- -->
+<section id="workout" class="project">
+  <div class="project-head">
+    <span class="project-index">02</span>
+    <div>
+      <h2>Geautomatiseerde workout-planner</h2>
+      <p class="project-oneliner">Leest wekelijks de trainingen uit mijn mail en zet ze automatisch in de backoffice van mijn sportschool.</p>
+    </div>
+  </div>
+
+  <div class="pipeline">
+    <div class="pipe-step"><span class="pipe-ico">📧</span><span class="pipe-lbl">PDF uit mail</span></div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step"><span class="pipe-ico">📄</span><span class="pipe-lbl">Tekst uitlezen</span></div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step"><span class="pipe-ico">🧠</span><span class="pipe-lbl">Herkennen &amp; opschonen</span></div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step"><span class="pipe-ico">{ }</span><span class="pipe-lbl">Structureren (JSON)</span></div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step"><span class="pipe-ico">🌐</span><span class="pipe-lbl">Uploaden backoffice</span></div>
+  </div>
+
+  <div class="gallery">
+    <figure class="shot wide">
+      <img src="assets/workout-pdf-page.png" alt="Voorbeeldpagina uit de wekelijkse workout-PDF" class="zoomable" data-full="assets/workout-pdf-page.png" loading="lazy" />
+      <figcaption>De input: één pagina uit de wekelijkse PDF.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-body">
+    <div class="block">
+      <h3>Wat het doet en hoe het werkt</h3>
+      <p>
+        Elke week stuurt de programmamaker een PDF met zeven dagen aan trainingen. Deze Claude-routine haalt
+        die PDF automatisch uit mijn mailbox, maakt een extractie van de workouts, giet dit in mijn stijl en
+        uploadt alles via de browser naar een backoffice van een app die coaches en leden gebruiken. Het draait
+        als geplande taak en waarschuwt me als er iets niet klopt.
+      </p>
+      <p>Dit project bespaart mij 20 minuten per week.</p>
+    </div>
+
+    <div class="block highlight">
+      <h3>💡 Wat ik heb geleerd</h3>
+      <p>
+        Dit project draaide om <strong>omgaan met niet-generieke input</strong>. Elke PDF is anders.
+        Ik leerde hoe je rommelige, onvoorspelbare tekst betrouwbaar normaliseert naar gestructureerde data —
+        met herkenning, filtering en fallback-logica, plus alerts wanneer het script ergens onzeker over is.
+      </p>
+    </div>
+
+    <div class="block roadmap">
+      <h3>🔧 Verbeterpunten &amp; volgende versie</h3>
+      <p>Na een aantal iteraties komen er nog enkele fouten voorbij die verbeterd moeten worden.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- PROJECT 3: PUZZEL-APP ---------- -->
+<section id="puzzel" class="project">
+  <div class="project-head">
+    <span class="project-index">03</span>
+    <div>
+      <h2>Puzzel-app (PWA)</h2>
+      <p class="project-oneliner">Een installeerbare legpuzzel-app. Van reclame-frustratie tot gepersonaliseerde puzzels maken.</p>
+    </div>
+  </div>
+
+  <div class="gallery gallery-app">
+    <figure class="shot phone">
+      <img src="assets/puzzel-menu.png" alt="Menu van de puzzel-app" class="zoomable" data-full="assets/puzzel-menu.png" loading="lazy" />
+      <figcaption>Menu: kies moeilijkheid en een foto-bron.</figcaption>
+    </figure>
+    <figure class="shot phone">
+      <img src="assets/puzzel-game.png" alt="Half afgemaakte puzzel in het spel" class="zoomable" data-full="assets/puzzel-game.png" loading="lazy" />
+      <figcaption>In het spel: sleep de stukjes naar het bord — hier halverwege.</figcaption>
+    </figure>
+  </div>
+
+  <div class="project-body">
+    <div class="block">
+      <h3>Wat het doet</h3>
+      <p>
+        Een digitale legpuzzel met drie moeilijkheidsgraden (12, 35 of 80 stukjes). Je puzzelt met
+        stockfoto's of eigen foto's. Die eigen foto's kun je selecteren of je kunt je galerij koppelen.
+        Compleet met geluidjes, ranglijsten en timers.
+      </p>
+    </div>
+
+    <div class="block">
+      <h3>Hoe het werkt</h3>
+      <p>
+        De app is gebouwd in pure HTML, CSS en JavaScript — zonder framework. De app staat live via
+        <strong>GitHub Pages</strong>.
+      </p>
+    </div>
+
+    <div class="block highlight">
+      <h3>💡 Wat ik heb geleerd</h3>
+      <p>
+        Met dit project leerde ik <strong>werken met GitHub</strong> (een repository opzetten, met branches werken
+        en automatisch publiceren via GitHub Pages) én <strong>een complete applicatie bouwen</strong> — van een leeg
+        idee tot een werkende, online app die anderen kunnen gebruiken en installeren. Ik heb mij wederom verbaasd
+        hoe snel je met AI goed werkende applicaties kunt bouwen.
+      </p>
+    </div>
+
+  
+    <div class="block roadmap">
+      <h3>🔧 Verbeterpunten &amp; volgende versie</h3>
+      <p>Er zijn allerlei toevoegingen te bedenken, maar momenteel zijn mijn vriendin en ik tevreden met het resultaat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section contact">
+  <div class="section-head">
+    <h2>Contact</h2>
+    <p class="section-sub">Heb je een vraag of wil je kennismaken? Ik hoor graag van je.</p>
+  </div>
+  <div class="contact-links">
+    <a href="mailto:Tim_van_dalfsen@hotmail.com" class="contact-card">
+      <span class="contact-ico">✉️</span>
+      <span class="contact-lbl">E-mail</span>
+      <span class="contact-val">Tim_van_dalfsen@hotmail.com</span>
+    </a>
+    <a href="https://github.com/timvandalfsen-oss" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-ico">💻</span>
+      <span class="contact-lbl">GitHub</span>
+      <span class="contact-val">timvandalfsen-oss</span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Tim van Dalfsen · Portfolio van AI-projecten</p>
+  <p class="footer-sub">Gebouwd met HTML, CSS &amp; JavaScript — gehost op GitHub Pages.</p>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Sluiten">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
